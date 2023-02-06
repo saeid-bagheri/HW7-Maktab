@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="Files/bootstrap.min.css">
+    <script src="Files/jquery-3.6.3.min.js"></script>
+    <title>خرید محصول</title>
+
+    <style>
+        * {
+            direction: rtl;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .rightSide {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .leftSide {
+            background-color: rgb(165 173 200 / 53%);
+        }
+
+        .rightSide .row {
+            align-items: flex-end;
+        }
+
+        .floatLeft {
+            float: left;
+        }
+
+        .floatRight {
+            float: right;
+        }
+
+        .images {
+            width: 75px;
+
+        }
+
+        .greyColor {
+            color: grey;
+        }
+
+        .squareBorder {
+            padding: 0px;
+            border: solid 1px black;
+            width: 25px;
+        }
+
+        .btnDelete {
+            background-color: transparent;
+            border: none;
+        }
+
+        .noPaddingLeft {
+            padding-left: 0px !important;
+        }
+
+        .noPaddingRight {
+            padding-right: 0px !important;
+        }
+
+        .txtBox {
+            background-color: transparent;
+            width: 25px;
+            padding: 0px;
+            text-align: center;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 rightSide">
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2>
+                            <strong>
+                                کارت خرید
+                            </strong>
+                        </h2>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="floatLeft greyColor">
+                            <label for="itemCount1" id="itemCount1"><span>0</span></label><span> محصول</span>
+                        </h6>
+                    </div>
+                </div>
+                <hr>
+                <table class="table">
+                    <tbody id="bodyTable">
+                        <tr class="align-middle">
+                            <td class="noPaddingRight">
+                                <div class="row">
+                                    <img src="116798923.jpg" class="images noPaddingRight" alt="...">
+
+                                    <div class="col-md-6">
+                                        <span class="greyColor">پیراهن</span>
+                                        <br>
+                                        <span>
+                                            <h6>پیراهن کتان</h6>
+                                        </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                - <input type="number" name="count1" id="count1" class="squareBorder"> +
+                            </td>
+                            <td style="padding-left: 0px;">
+                                <span>200 هزار تومان</span>
+                            </td>
+                            <td class="noPaddingLeft">
+                                <button class="btnDelete greyColor floatLeft noPaddingLeft">x</button>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td class="noPaddingRight">
+                                <div class="row">
+                                    <img src="images.jpg" class="images noPaddingRight" alt="...">
+
+                                    <div class="col-md-6">
+                                        <span class="greyColor">پیراهن</span>
+                                        <br>
+                                        <span>
+                                            <h6>پیراهن کتان</h6>
+                                        </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                - <input type="number" name="count2" id="count2" class="squareBorder"> +
+                            </td>
+                            <td style="padding-left: 0px;">
+                                <span>200 هزار تومان</span>
+                            </td>
+                            <td class="noPaddingLeft">
+                                <button class="btnDelete greyColor floatLeft noPaddingLeft">x</button>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td class="noPaddingRight">
+                                <div class="row">
+                                    <img src="222.jpg" class="images noPaddingRight" alt="...">
+
+                                    <div class="col-md-6">
+                                        <span class="greyColor">پیراهن</span>
+                                        <br>
+                                        <span>
+                                            <h6>پیراهن کتان</h6>
+                                        </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                - <input type="number" name="count3" id="count3" class="squareBorder"> +
+                            </td>
+                            <td style="padding-left: 0px;">
+                                <span>200 هزار تومان</span>
+                            </td>
+                            <td class="noPaddingLeft">
+                                <button class="btnDelete greyColor floatLeft noPaddingLeft">x</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btnDelete floatRight greyColor" style="margin-top: 35px;">بازگشت به
+                            فروشگاه</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 leftSide">
+                <div class="row" style="margin-top: 36px;">
+                    <h3>
+                        <strong>
+                            خلاصه
+                        </strong>
+                    </h3>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6 class="greyColor">
+                            <label for="itemCount2" id="itemCount2"><span>0</span></label><span> محصول</span>
+                        </h6>
+                    </div>
+                    <div class="col-md-6" style="text-align: left;">
+                        <h6 class="greyColor">
+                            <label for="price1" id="price1"><span>0</span></label><span> تومان</span>
+                        </h6>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <span>حمل و نقل</span>
+                    <br>
+                    <div class="col-md-12 mt-2">
+                        <select id="delivery" class="form-select bg-white" aria-label="Default select example" disabled>
+                            <option value="20000">تحویل کالا - 20 هزار تومان</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <span>دریافت کد</span>
+                    <div class="col-md-12 mt-2">
+                        <input type="text" placeholder="کد خود را وارد نمایید" class="bg-white"
+                            style="width: 100%; border: none;">
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6 class="greyColor">
+                            قیمت کل
+                        </h6>
+                    </div>
+                    <div class="col-md-6" style="text-align: left;">
+                        <h6 class="greyColor">
+                            <label for="price2" id="price2"><span>0</span></label><span> تومان</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jQuery.js"></script>
+
+</body>
+
+</html>
